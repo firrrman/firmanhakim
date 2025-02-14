@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link href="src/output.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+      * {
+        font-family: "DM Sans", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Sembunyikan scrollbar di WebKit (Chrome, Safari) */
+      .overflow-x-auto::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Sembunyikan scrollbar di Firefox */
+      .overflow-x-auto {
+        scrollbar-width: none;
+      }
+
+      /* Sembunyikan scrollbar di WebKit (Chrome, Safari) */
+      *::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Sembunyikan scrollbar di Firefox */
+      * {
+        scrollbar-width: none;
+      }
+
+      /* Custom animation for fade-in effect */
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+      }
+
+      .fade-in.show {
+        animation: fadeInUp 1s ease-out forwards;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="fixed top-0 w-full flex items-center z-999">
+      <div>
+        <div class="flex justify-between items-center">
+          <!-- logo -->
+          <div class="p-5 md:pl-12 xl:p-6 xl:pl-20">
+            <a href="halamanutama.html" class="text-white text-xl xl:text-2xl"
+              >FH</a
+            >
+          </div>
+
+          <!-- navbar -->
+          <nav class="hidden lg:block pl-10">
+            <ul class="flex text-white gap-7 text-sm lg:gap-15 xl:gap-20">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portofolio">Portofolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- humberger menu -->
+          <div
+            class="p-5 absolute right-0 flex items-center md:pr-12 lg:hidden"
+          >
+            <button class="cursor-pointer" id="hamburger-menu">
+              <span
+                class="w-[25.5px] h-[1px] my-2 block bg-white transition-all duration-300 ease-in-out"
+              ></span>
+              <span
+                class="w-[25.5px] h-[1px] my-2 block bg-white transition-all duration-300 ease-in-out"
+              ></span>
+              <span
+                class="w-[25.5px] h-[1px] my-2 block bg-white transition-all duration-300 ease-in-out"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- menu for mobile -->
+    <nav
+      class="bg-black h-lvh w-full fixed hidden px-5 md:pl-12 py-20 z-500"
+      id="nav-mobile"
+    >
+      <ul class="text-white flex flex-col gap-5">
+        <li><a class="nav-mobile" href="#home">Home</a></li>
+        <li><a class="nav-mobile" href="#about">About</a></li>
+        <li><a class="nav-mobile" href="#portofolio">Portofolio</a></li>
+        <li><a class="nav-mobile" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="w-full h-lvh sm:h-[700px] lg:h-lvh relative" id="home">
+        <!-- Name -->
+        <div
+          class="w-full h-full absolute z-10 flex items-center pl-5 pb-12 md:pl-12 xl:pl-20"
+        >
+          <div class="text-white flex flex-col gap-2" id="contain">
+            <h1 class="text-sm lg:text-lg">Hello everyone, i am</h1>
+
+            <div class="relative">
+              <h1
+                class="font-stretch-200% text-5xl sm:text-7xl md:text-7xl lg:text-8xl"
+              >
+                Firman Hakim
+              </h1>
+              <div class="relative">
+                <div
+                  class="absolute md:text-2xl lg:text-3xl text-xl transition-all duration-1000"
+                  id="text"
+                >
+                  Web Developer
+                </div>
+                <div
+                  class="absolute md:text-2xl lg:text-3xl text-xl transition-all duration-1000"
+                  id="text"
+                >
+                  Frontend Developer
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="w-36 md:w-44 md:p-3 md:text-sm p-2 rounded-lg bg-black hover:bg-white hover:text-black transition-all duration-300 mt-10 lg:mt-14 text-[12px]"
+            >
+              <a href="./cv/CV_FirmanHakim.pdf" target="_blank">View CV</a>
+            </button>
+          </div>
+        </div>
+
+        <!-- media social -->
+        <div
+          class="absolute z-30 bottom-17 lg:bottom-7 w-full flex justify-center lg:justify-normal lg:pl-1 xl:pl-9"
+        >
+          <div class="flex gap-6 px-10 sm:gap-10 md:gap-16">
+            <a
+              href="https://www.instagram.com/firmnh_?igsh=ZjRiZTNscXc0OTdo"
+              target="_blank"
+              ><img
+                class="w-8 md:w-9 lg:w-10 hover:filter hover:invert hover:scale-125 transition-all duration-300"
+                src="../../img/instagram.png"
+                alt=""
+            /></a>
+            <a
+              href="https://www.tiktok.com/@rekomenman?_t=ZS-8tVCrFf6JGc&_r=1"
+              target="_blank"
+              ><img
+                class="w-8 md:w-9 lg:w-10 hover:filter hover:invert hover:scale-125 transition-all duration-300"
+                src="../../img/tiktok.png"
+                alt=""
+              />
+            </a>
+            <a href="https://wa.me/6285810642529" target="_blank"
+              ><img
+                class="w-8 md:w-9 lg:w-10 hover:filter hover:invert hover:scale-125 transition-all duration-300"
+                src="../../img/whatsapp.png"
+                alt=""
+            /></a>
+            <a href="https://t.me/firmannn_11" target="_blank"
+              ><img
+                class="w-8 md:w-9 lg:w-10 hover:filter hover:invert hover:scale-125 transition-all duration-300"
+                src="../../img/telegram.png"
+                alt=""
+            /></a>
+            <a
+              href="https://youtube.com/@kerandomannn?si=W3NC0iFBIVzQ7Z9U"
+              target="_blank"
+              ><img
+                class="w-8 md:w-9 lg:w-10 hover:filter hover:invert hover:scale-125 transition-all duration-300"
+                src="../../img/youtube.png"
+                alt=""
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/firman-hakim-1b456b319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              ><img
+                class="w-8 md:w-9 lg:w-10 hover:filter hover:invert hover:scale-125 transition-all duration-300"
+                src="../../img/linkedin.png"
+                alt=""
+            /></a>
+            <a href="https://github.com/firrrman" target="_blank"
+              ><img
+                class="w-8 md:w-9 lg:w-10 hover:filter hover:invert hover:scale-125 transition-all duration-300"
+                src="../../img/github.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+
+        <!-- background video -->
+        <img
+          src="./img/firmanhakim.jpg"
+          alt=""
+          class="object-cover md:object-left-bottom lg:object-bottom w-full h-full lg:h-[110vh] filter brightness-60"
+        />
+      </section>
+
+      <section
+        class="bg-black w-full rounded-t-[50px] pb-32 lg:pb-52 relative z-50 px-5 md:px-12 xl:px-20 py-15 -mt-12 lg:-mt-0"
+      >
+        <!-- about me -->
+        <h1 class="text-white text-4xl mb-10 scroll-mt-20 fade-in" id="about">
+          About Me
+        </h1>
+        <div>
+          <img
+            src="./img/firman.jpeg"
+            alt=""
+            class="w-32 md:w-36 md:mb-1 lg:w-48 xl:w-64 rounded-full float-left mr-5 lg:mr-10 fade-in"
+          />
+          <p
+            class="text-white font-light md:text-lg lg:text-2xl hover-gradient fade-in"
+            id="coba"
+          >
+            Hi, I'm Firman Hakim! <br />
+            I'm a passionate Frontend Developer with a strong focus on crafting
+            modern, responsive, and user-friendly web applications. With a deep
+            understanding of HTML, CSS, Javascript and Talwindcss I love turning
+            creative ideas into functional and visually appealing digital
+            experiences.
+          </p>
+          <br />
+          <p
+            class="text-white font-light md:text-lg lg:text-2xl hover-gradient fade-in"
+          >
+            I enjoy the process of designing and developing intuitive interfaces
+            that enhance user interaction. From crafting pixel-perfect layouts
+            to optimizing performance, I thrive on solving challenges that
+            improve the web experience for users. My goal is to create
+            applications that are fast, accessible, and engaging.
+          </p>
+        </div>
+
+        <!-- my slill -->
+        <div class="fade-in">
+          <h1 class="text-white mt-10 mb-5 text-2xl">My Skill</h1>
+          <div class="flex gap-7 lg:gap-10 items-center">
+            <a
+              href="https://web.dev/html?hl=id"
+              target="_blank"
+              class="animate-pulse"
+            >
+              <img src="./img/html.png" alt="" class="w-9 lg:w-12" />
+            </a>
+            <a
+              href="https://web.dev/css?hl=id"
+              target="_blank"
+              class="animation-await"
+            >
+              <img src="./img/text.png" alt="" class="w-9 lg:w-12" />
+            </a>
+            <a
+              href="https://web.dev/javascript?hl=id"
+              target="_blank"
+              class="animate-pulse"
+            >
+              <img src="./img/js.png" alt="" class="w-9 lg:w-12" />
+            </a>
+            <a
+              href="https://www.php.net/"
+              target="_blank"
+              class="animation-await"
+            >
+              <img src="./img/php.png" alt="" class="w-12 lg:w-16" />
+            </a>
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              class="animate-pulse"
+            >
+              <img src="./img/talwindcss.png" alt="" class="w-9 lg:w-12" />
+            </a>
+            <a
+              href="https://www.figma.com/"
+              target="_blank"
+              class="animation-await"
+            >
+              <img src="./img/figma.png" alt="" class="w-9 lg:w-12" />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="text-white mt-10 mb-5 text-2xl fade-in">Service</h1>
+          <div class="flex flex-col gap-5 md:flex-row">
+            <!-- design ui/ux -->
+            <div
+              id="contain-service"
+              class="bg-white w-full rounded-lg flex flex-col items-center gap-2 relative group fade-in"
+            >
+              <p
+                id="deskripsi"
+                class="absolute text-lg rounded-lg opacity-0 w-full h-full p-5 flex justify-center items-center text-center group-hover:opacity-100 transition-all duration-300"
+              >
+                Designing intuitive and visually appealing interfaces with a
+                user-centered approach. Focused on delivering an optimal user
+                experience, ensuring easy navigation, attractive aesthetics, and
+                seamless usability for applications or websites.
+              </p>
+
+              <div
+                id="service"
+                class="w-full flex justify-center flex-col items-center filter group-hover:blur-sm group-open:filter group-open:blur-sm transition-all duration-300"
+              >
+                <h1 class="text-xl font-bold my-5">UI/UX Design</h1>
+                <img class="w-40 mb-5" src="./img/design.png" alt="" />
+              </div>
+            </div>
+
+            <!-- Web depelopment -->
+            <div
+              id="contain-service"
+              class="bg-white w-full rounded-lg flex flex-col items-center gap-2 relative group fade-in"
+            >
+              <p
+                id="deskripsi"
+                class="absolute text-lg rounded-lg opacity-0 w-full h-full p-5 flex justify-center items-center text-center group-hover:opacity-100 transition-all duration-300"
+              >
+                Building responsive and interactive websites with a modern
+                design and optimal performance. I ensure that the developed
+                websites meet user needs, are easily accessible, and function
+                well across various devices.
+              </p>
+
+              <div
+                id="service"
+                class="w-full flex justify-center flex-col items-center filter group-hover:blur-sm group-open:filter group-open:blur-sm transition-all duration-300"
+              >
+                <h1 class="text-xl font-bold my-5">Web Depelopment</h1>
+                <img class="w-40 mb-5" src="./img/coding.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- portofolio -->
+        <div class="mt-20 scroll-mt-20" id="portofolio">
+          <h1 class="text-white text-4xl mb-10 fade-in">Portofolio</h1>
+          <div class="flex gap-5 overflow-x-auto">
+            <!-- design web lppm -->
+            <div
+              class="p-5 bg-white w-60 xl:w-80 flex justify-center flex-col items-center rounded-sm shrink-0 transition-all duration-300 hover:opacity-50 fade-in"
+            >
+              <img
+                src="./img/web-lppm.jpeg"
+                alt=""
+                class="w-56 xl:w-72 border-[1px] border-gray-300"
+              />
+              <div>
+                <a
+                  href="https://www.figma.com/design/ftA7yWidf1CWZO9qvaSj1O/LPPM?node-id=1-2&m=dev&t=16MgTU3ahwSu33Ci-1"
+                  target="_blank"
+                  class="font-bold flex justify-between mt-3"
+                >
+                  Design Web LPPM<img
+                    class="w-5 h-5"
+                    src="./img/figma.png"
+                    alt=""
+                  />
+                </a>
+                <p class="text-[8px] xl:text-[10px] mt-1">
+                  Creating an informative, modern, and user-friendly LPPM
+                  website design, designed using Figma to ensure responsiveness.
+                </p>
+              </div>
+            </div>
+
+            <!-- design aplication nc -->
+            <div
+              class="p-5 bg-white w-60 xl:w-80 flex justify-center flex-col items-center rounded-sm shrink-0 transition-all duration-300 hover:opacity-50 fade-in"
+            >
+              <img
+                src="./img/design-nc.jpeg"
+                alt=""
+                class="w-56 xl:w-72 border-[1px] border-gray-300"
+              />
+              <div>
+                <a
+                  href="https://www.figma.com/design/iL2Zrh7XLBY6laX6phCfvx/Untitled?node-id=0-1&m=dev&t=0KN8TwoAtmCVDYvM-1"
+                  target="_blank"
+                  class="font-bold flex justify-between mt-3"
+                >
+                  Design Aplication NC<img
+                    class="w-5 h-5"
+                    src="./img/figma.png"
+                    alt=""
+                  />
+                </a>
+                <p class="text-[8px] xl:text-[10px] mt-1">
+                  Designing the NC application with a modern and responsive
+                  interface to help students access academic information.
+                  Created using Figma to ensure an optimal user experience.
+                </p>
+              </div>
+            </div>
+
+            <!-- aplication sipil -->
+            <div
+              class="p-5 bg-white w-60 xl:w-80 flex justify-center flex-col items-center rounded-sm shrink-0 transition-all duration-300 hover:opacity-50 fade-in"
+            >
+              <img
+                src="./img/aplication-sipil.jpeg"
+                alt=""
+                class="w-56 xl:w-72 border-[1px] border-gray-300"
+              />
+              <div>
+                <a class="font-bold flex justify-between mt-3">
+                  Aplication Profil Sipil<img
+                    class="w-5 h-5"
+                    src="./img/android.png"
+                    alt=""
+                  />
+                </a>
+                <p class="text-[8px] xl:text-[10px] mt-1">
+                  Developing the Civil Engineering profile application with an
+                  intuitive design to provide essential program information.
+                  Built for an interactive user experience on Android.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- sertifikat -->
+
+          <div
+            class="fixed top-0 bottom-0 left-0 right-0 hidden"
+            id="modal-sertifikat"
+          >
+            <div
+              class="relative w-full z-100 h-full flex justify-center items-center px-12 cursor-pointer"
+              id="modal-sertifikat-img"
+            ></div>
+            <div
+              class="absolute top-0 z-20 opacity-90 bottom-0 left-0 right-0 bg-black"
+            ></div>
+          </div>
+
+          <div class="mt-10">
+            <h1 class="text-white text-2xl mb-5 fade-in">Certificate</h1>
+            <div class="flex gap-5 overflow-x-auto">
+              <!-- sertifikat javascript introduction -->
+              <div
+                class="text-white flex flex-col gap-2 w-80 shrink-0 transition-all duration-300 fade-in"
+              >
+                <img
+                  src="./img/sertifikat-javascript.jpeg"
+                  alt=""
+                  class="w-80 rounded-lg cursor-pointer"
+                  id="sertifikat"
+                />
+                <h1>Javascript Introduction</h1>
+                <p class="text-[12px]">
+                  This certificate confirms the completion of the JavaScript
+                  Introduction class, covering the fundamentals of JavaScript,
+                  including syntax, variables, functions, and its application in
+                  web development.
+                </p>
+              </div>
+
+              <!-- sertifikat frontend fundamental -->
+              <div
+                class="text-white flex flex-col gap-2 w-80 shrink-0 transition-all duration-300 fade-in"
+              >
+                <img
+                  src="./img/sertifikat-frontend.jpeg"
+                  alt=""
+                  class="w-80 rounded-lg cursor-pointer"
+                  id="sertifikat"
+                />
+
+                <h1>Frontend Fundamentals</h1>
+                <p class="text-[12px]">
+                  This certificate confirms the completion of the Frontend
+                  Fundamentals class, covering the basics of frontend
+                  development, including HTML, CSS, JavaScript, and responsive
+                  design principles.
+                </p>
+              </div>
+
+              <!-- sertifikat iot -->
+
+              <div
+                class="text-white flex flex-col gap-2 w-80 shrink-0 transition-all duration-300 fade-in"
+              >
+                <img
+                  src="./img/sertifikat-iot.jpeg"
+                  alt=""
+                  class="w-80 rounded-lg cursor-pointer"
+                  id="sertifikat"
+                />
+                <h1>Peluang dan Tantangan Penerapan Sistem IOT di Indonesia</h1>
+                <p class="text-[12px]">
+                  This certificate confirms the completion of the Opportunities
+                  and Challenges of IoT Implementation in Indonesia class,
+                  covering the potential, obstacles, and strategies for adopting
+                  IoT technology in various sectors.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- contact us -->
+        <div class="mt-20 scroll-mt-20" id="contact">
+          <h1 class="text-white text-4xl mb-10 fade-in">Contact Us</h1>
+          <div class="md:flex md:items-center md:gap-10 md:justify-between">
+            <div class="text-white w-full fade-in">
+              <p>
+                Interested in collaborating or discussing a project? Feel free
+                to reach out!
+              </p>
+              <div class="grid grid-cols-2 gap-10 mt-10 w-72">
+                <!-- for whatsapp -->
+                <a
+                  href="https://wa.me/6285810642529"
+                  target="_blank"
+                  class="flex items-center gap-3"
+                >
+                  <img
+                    src="./img/whatsapp.png"
+                    alt=""
+                    class="bg-white rounded-sm p-1 w-8 lg:w-10"
+                  />
+                  <div
+                    class="flex flex-col text-[10px] sm:text-[11px] lg:text-sm"
+                  >
+                    <p>Whatsapp</p>
+                    <p>085781594138</p>
+                  </div>
+                </a>
+
+                <!-- for telegram -->
+                <a
+                  href="https://t.me/firmannn_11"
+                  target="_blank"
+                  class="flex items-center gap-3"
+                >
+                  <img
+                    src="./img/telegram.png"
+                    alt=""
+                    class="bg-white rounded-sm p-1 w-8 lg:w-10"
+                  />
+                  <div
+                    class="flex flex-col text-[10px] sm:text-[11px] lg:text-sm"
+                  >
+                    <p>Telegram</p>
+                    <p>085781594138</p>
+                  </div>
+                </a>
+
+                <!-- for instagram -->
+                <a
+                  href="https://www.instagram.com/firmnh_?igsh=ZjRiZTNscXc0OTdos"
+                  target="_blank"
+                  class="flex items-center gap-3"
+                >
+                  <img
+                    src="./img/instagram.png"
+                    alt=""
+                    class="bg-white rounded-sm p-1 w-8 lg:w-10"
+                  />
+                  <div
+                    class="flex flex-col text-[10px] sm:text-[11px] lg:text-sm"
+                  >
+                    <p>Instagram</p>
+                    <p>firmanh_11</p>
+                  </div>
+                </a>
+
+                <!-- for email -->
+                <a href="" target="_blank" class="flex items-center gap-3">
+                  <img
+                    src="./img/email.png"
+                    alt=""
+                    class="bg-white rounded-sm p-1 w-8 lg:w-10"
+                  />
+                  <div
+                    class="flex flex-col text-[10px] sm:text-[11px] lg:text-sm"
+                  >
+                    <p>Email</p>
+                    <p>firmanh11@gmail.com</p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="flex mt-10 lg:mt-10 gap-5 items-center border-t-[1px] border-white w-fit pt-5"
+              >
+                <p class="text-sm">Social Media</p>
+                <a
+                  href="https://www.instagram.com/firmnh_?igsh=ZjRiZTNscXc0OTdos"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/instagram.png"
+                    alt=""
+                    class="bg-white rounded-full w-8 lg:w-10"
+                  />
+                </a>
+
+                <a
+                  href="https://www.tiktok.com/@rekomenman?_t=ZS-8tVCrFf6JGc&_r=1"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/tiktok.png"
+                    alt=""
+                    class="bg-white rounded-full w-8 lg:w-10"
+                  />
+                </a>
+
+                <a
+                  href="https://youtube.com/@kerandomannn?si=W3NC0iFBIVzQ7Z9U"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/youtube.png"
+                    alt=""
+                    class="bg-white rounded-full w-8 lg:w-10"
+                  />
+                </a>
+              </div>
+            </div>
+            <form
+              class="bg-gray-900 p-5 w-full rounded-sm mt-10 md:mt-0 fade-in"
+            >
+              <div class="grid grid-cols-2 gap-5">
+                <div>
+                  <h1 class="text-white text-[11px] mb-1 lg:text-sm">Email</h1>
+                  <input
+                    required
+                    type="email"
+                    placeholder="Email"
+                    class="w-full bg-white p-2 text-[11px] lg:text-sm rounded-sm"
+                  />
+                </div>
+                <div>
+                  <h1 class="text-white text-[11px] mb-1 lg:text-sm">Name</h1>
+                  <input
+                    required
+                    type="text"
+                    placeholder="Name"
+                    class="w-full bg-white p-2 text-[11px] lg:text-sm rounded-sm"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col mt-5 gap-5">
+                <div>
+                  <h1 class="text-white text-[11px] mb-1 lg:text-sm">Phone</h1>
+                  <input
+                    required
+                    type="text"
+                    placeholder="Phone"
+                    class="w-full bg-white p-2 text-[11px] lg:text-sm rounded-sm"
+                  />
+                </div>
+
+                <div>
+                  <h1 class="text-white text-[11px] mb-1 lg:text-sm">
+                    Message
+                  </h1>
+
+                  <textarea
+                    required
+                    name=""
+                    id=""
+                    placeholder="Message"
+                    class="w-full bg-white h-52 rounded-sm p-2 text-[11px] lg:text-sm"
+                  ></textarea>
+                </div>
+                <button
+                  class="bg-white w-28 rounded-sm text-[11px] lg:text-sm p-2 cursor-pointer"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-black text-white text-center text-[11px] lg:text-sm py-10 border-t-[1px] border-white"
+    >
+      <p>© 2025 Firman Hakim. All rights reserved.</p>
+    </footer>
+
+    <script src="portofolio.js"></script>
+  </body>
+</html>

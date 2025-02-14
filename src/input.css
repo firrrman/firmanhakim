@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.navbar {
+  @apply bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply origin-top-left rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply origin-bottom-left -rotate-45;
+}
+
+/* hover gradient text about me */
+.hover-gradient {
+  @apply hover:bg-gradient-to-tr hover:from-yellow-500 hover:to-pink-500 hover:bg-clip-text hover:text-transparent;
+}
